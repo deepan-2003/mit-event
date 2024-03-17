@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.dept-container {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fbfc;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-color);
+  padding: 20px 0 60px 0;
+  background-image: url(../../assets/bgd-white2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dept-container .dept-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  gap: 20px;
+}
+
+.dept-container .title {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.dept-card {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: white;
+  min-width: 420px;
+  gap: 10px;
+  font-size: 30px;
+  border: 1px solid #dedede;
+  @media (max-width: 768px) {
+    min-width: 100%;
+  }
+}
+.dept-card:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+.dept-card .svg-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  
+}
+
+.dept-card .dept-name {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.dept-card .description {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--not-so-light-grey);
+  text-align: justify;
+}
+
+.dept-card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}

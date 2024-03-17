@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.vision-main-card {
+  width: 450px;
+  padding: 20px;
+  background-color: #545ce4;
+  ;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .vision-main-card{
+    transform: translateY(-100px);
+} */
+.vheading {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+  color: aliceblue;
+
+  @media (max-width: 910px) {
+    font-size: 48px;
+  }
+}
+
+.mi-content {
+  font-family: 'Inter', sans-serif;
+}
+
+.vision-main-card>.body {
+  padding: 10px;
+  color: aliceblue;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media(max-width: 1400px) {
+  .vision-main-card {
+    width: 90vw;
+    padding: 20px;
+    background-color: #545ce4;
+    ;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-left: 5vw;
+  }
+}
+
+.mission-main-card {
+  padding: 3vw 3vw 3vh 3vw;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #6600ff;
+  background: radial-gradient(at left top, #34dd88, #38d9c2);
+  /* background: radial-gradient(at left top, #61876E, #1C6758); */
+
+  color: white;
+  font-weight: 600;
+  padding-left: 35vw;
+  align-items: right;
+  justify-content: end;
+
+  @media (max-width: 1400px) {
+    padding: 3vh 5vw;
+  }
+}
+
+.mission-main-card ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  padding-left: 1.2vw;
+  overflow: hidden;
+  max-height: 230px;
+  color: white;
+}
+
+.mission-main-card ul li {
+  list-style: disc;
+  padding: 8px;
+  /* @media (max-width: 1400px) {
+      display: list-item;
+    } */
+}
+
+@media (max-width: 1400px) {
+
+  .mission-main-card ul li:nth-child(2) {
+    display: none;
+  }
+
+  .mission-main-card ul li:nth-child(3) {
+    display: none;
+  }
+
+  .mission-main-card ul li:nth-child(4) {
+    display: none;
+  }
+
+}
+
+.mission-main-card>.heading {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+  color: azure;
+
+  @media (max-width: 910px) {
+    font-size: 48px;
+  }
+}
+
+.intro {
+  text-align: justify;
+}
+
+.mission-main-card>.login-container {
+  display: flex;
+  padding-top: 8px;
+  align-items: right;
+  justify-content: right;
+
+
+  @media (max-width: 910px) {
+    padding-right: 0;
+    align-items: left;
+    justify-content: left;
+  }
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #545ce4;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mi-vi-wrapper {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  display: flex;
+  /* padding: 32px;
+    height: 700px;
+    width: 100%; */
+  user-select: none;
+  background-image: url(../../assets/bgd-white2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mi-wrapper {
+  font-family: "Inter", sans-serif;
+  padding: 5vw 5vw 0 5vw;
+}
+
+.vi-wrapper {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 14.5vh;
+  /* top: 150px;
+    left: 950px; */
+}
+
+@media(max-width: 1400px) {
+  .mi-vi-wrapper {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+  }
+
+  .vi-wrapper {
+    position: unset;
+    margin-left: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    /* width: 90vw; */
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a4a4a4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #717171;
+}

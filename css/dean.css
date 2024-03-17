@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.deanMain {
+  background-image: url("./student.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+  width: 100%;
+  justify-content: space-between;
+  user-select: none;
+  position: relative;
+}
+.deanMask::before {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0,
+    #fff 100%
+  );
+  /* margin-top: 150px; */
+  margin-bottom: -150px;
+  height: 100%;
+  width: 100%;
+  content: "";
+}
+
+.deanMain > .deanMask {
+  display: flex;
+  overflow: hidden;
+}
+.deanMain .deanContent {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 75px 75px;
+  z-index: 1;
+  width: 130%;
+  font-family: 'Inter', sans-serif;
+  /* border: red solid; */
+}
+.deanContent .deanTitle {
+  font-size: 46px;
+  font-weight: 700;
+  color: #0d1a2a;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-family: 'Inter', sans-serif;
+  @media only screen and (max-width: 910px) {
+    font-size: 35px;
+  }
+}
+.deanContent .deanQuote {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #0d1a2a;
+  padding-top: 2%;
+  font-weight: 500;
+  /* border: red solid 1px; */
+  gap: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.deanQuoteContent {
+  margin-left: 0px;
+}
+.deanContent > .flex-row {
+  display: flex;
+  align-items: center;
+  padding-top: 5%;
+  /* gap: 100px; */
+}
+.deanContent > .flex-row > .more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #ffcf59;
+  color: 0d1a2a;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.deanMain > .deanMask > .deanImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  /* height: 300px; */
+  /* border: red solid; */
+}
+.deanMain > .deanMask > .deanImage > img {
+  margin-right: 20px;
+  /* height: 150%; */
+  /* width: 100%; */
+  z-index: 1;
+  /* border: red solid; */
+  /* margin-top: 15.5vh; */
+  height: 510px;
+
+  /* margin-bottom: -40px; */
+}
+
+@media (max-width: 1300px) {
+  .deanMain .deanContent {
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    /* border: red solid; */
+  }
+  .deanContent .deanTitle {
+    font-size: 32px;
+  }
+  .deanContent .deanQuote {
+    width: 100%;
+    font-size: small;
+  }
+  .deanmain > .deanMask > img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 900px) {
+  .deanMain .deanContent {
+    padding: 40px;
+  }
+  .deanMain {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .deanMain > .deanMask {
+    flex-wrap: wrap-reverse;
+  }
+  .deanContent .deanTitle {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .deanContent .deanQuote {
+    color: #ffffff;
+  }
+  .deanMask::before {
+    background-image: none;
+  }
+  .deanMain > .deanMask > .deanImage > img {
+    margin-right: 0;
+
+    height: 418px;
+  }
+
+  /* .deanMain .deanContent {
+     margin-top: 100px; 
+  } */
+}

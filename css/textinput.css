@@ -1,0 +1,74 @@
+.text-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.text-input-container > h4 {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.text-input-container > .text-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.text-input-container > .text-input-wrapper > .text-input {
+  color: var(--primary-color);
+  font-weight: 600;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  margin: 0;
+  padding: 5px 5px;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.text-input-container
+  > .text-input-wrapper
+  > .text-input[data-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.text-input-container > .text-input-wrapper > .text-input:focus {
+  border: none;
+}
+
+.text-input-container > .text-input-wrapper > .icon-wrapper {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 7px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.text-input-container > .text-input-wrapper > .text-input-eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.text-input-container > .text-input-error {
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 0px 5px;
+}

@@ -1,0 +1,18 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--body-color);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
